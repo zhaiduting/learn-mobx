@@ -6,6 +6,8 @@ export class TimerMobx extends Timer {
     super();
     makeObservable(this, {
       secondsPassed: observable,
+      increase: action,
+      reset: action,
     });
   }
 }
