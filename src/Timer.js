@@ -1,4 +1,4 @@
-export default class Timer {
+export default class {
   secondsPassed = 0;
   id;
 

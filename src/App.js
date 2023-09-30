@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import Timer from './Timer';
 import {observer} from 'mobx-react-lite';
-import {TimerMobx} from './TimerMobx';
+import TimerMobx from './TimerMobx';
 
 const TimerView = ({timer}) => {
   useEffect(() => {
