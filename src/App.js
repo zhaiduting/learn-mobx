@@ -17,7 +17,7 @@ export default function App() {
   return <>
     <p>尽管控制台可以正确输出递增的秒数，但是以下按钮上的数字却并不会刷新</p>
     <TimerView timer={new Timer()}/>
-    <TimerView timer={new Timer()}/>
+    <TimerView timer={new TimerMobx()}/> {/* 也不会刷新 */}
     <p>改用Mobx管理状态后</p>
     <TimerViewMobx timer={new TimerMobx()}/>
   </>;
